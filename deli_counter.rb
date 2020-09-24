@@ -9,7 +9,6 @@ def line(katz_deli)
   if(katz_deli.empty?)
     puts "The line is currently empty."
   else
-<<<<<<< HEAD
     text = "The line is currently:"
     counter = 0
     while counter < katz_deli.length do
@@ -17,20 +16,12 @@ def line(katz_deli)
       counter+=1
     end
     puts text
-=======
-    print "The line is currently: "
-    counter = 0
-    while(counter < katz_deli.size) do
-      print "#{counter+1}. #{katz_deli[counter]} "
-      counter+=1
-    end
->>>>>>> 137c0d2448e26f29edea6f23ab01033b38d27ad3
   end
 end
 
 def take_a_number(katz_deli,name)
   katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 def now_serving(katz_deli)
@@ -40,4 +31,10 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   end
+end
+
+counter = 0
+def take_a_number
+  counter+=1 
+  puts "#{counter}"
 end
